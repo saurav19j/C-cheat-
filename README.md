@@ -34,3 +34,19 @@ public class Player : MonoBehaviour
         
     }
 }
+// User input
+ void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Space Key");
+        }
+    }
+}
+ 
