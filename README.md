@@ -65,3 +65,16 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.right * _speed * Time.deltaTime);
     }
 }
+
+// Collectible
+public class Collectible : MonoBehaviour
+
+    {
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Player") 
+            {
+                Destroy(this.gameObject);
+            }
+        }
+    }
